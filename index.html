@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tareas Interactiva</title>
+    <link rel="stylesheet" href="css.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="todo-app">
+      <h1>Lista de Tareas</h1>
+      <input
+        type="text"
+        id="new-task"
+        placeholder="Agregar una nueva tarea..."
+      />
+      <button id="add-task-btn">Agregar Tarea</button>
+
+      <div class="filters">
+        <button class="filter-btn" data-filter="all">Todas</button>
+        <button class="filter-btn" data-filter="completed">Completadas</button>
+        <button class="filter-btn" data-filter="pending">Pendientes</button>
+      </div>
+
+      <div id="task-list"></div>
+      <p id="task-counter">Tareas Pendientes: <span>0</span></p>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
